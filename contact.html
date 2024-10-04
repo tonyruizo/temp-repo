@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Florida - Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/">Explore Florida</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/tallahassee.html">Tallahassee</a></li>
+          <li><a href="/tampa.html">Tampa</a></li>
+          <li><a href="/orlando.html">Orlando</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <hr />
+
+      <!-- Header Section -->
+      <header>
+        <div class="hero-pages-container">
+          <img
+            src="/assets/contact.jpg"
+            alt="Buildings with clear blue sky from theme park."
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-pages-content">
+            <h1><span>Contact Us</span> Email | Phone</h1>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <section id="form-section">
+          <h2>
+            Have a question? Fill out a form or call us at
+            <a href="tel:855-555-5555">+1 855-555-5555</a>
+          </h2>
+          <p>We will respond to you as soon as possible.</p>
+          <form id="contactForm" onsubmit="return validateForm()">
+            <div>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+
+            <div>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="confirmEmail">Confirm Email Address:</label>
+              <input
+                type="email"
+                id="confirmEmail"
+                name="confirmEmail"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="question">Your Question:</label>
+              <textarea
+                id="question"
+                name="question"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </header>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

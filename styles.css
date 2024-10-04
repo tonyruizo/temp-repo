@@ -1,0 +1,350 @@
+/* Universtal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reusable styles */
+:root {
+    --primary-color: #FF914D;
+    --primary-bg: #ff914dcc;
+}
+
+.page-container {
+    padding: 0 5rem;
+}
+
+.main-content h2,
+.city-content h2 {
+    padding: 2rem 0;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+ol li,
+ul li {
+    padding: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo a {
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-left: 2rem;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-radius: 0%;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF914D;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Header Section */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin: 1.2rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container img,
+.hero-pages-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+
+.darken {
+    background-color: #000000a6;
+}
+
+.hero-home-content {
+    position: absolute;
+    top: 150px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-home-content h1 {
+    font-size: 2.5rem;
+    background-color: var(--primary-bg);
+    padding: 2.5rem 4rem;
+}
+
+/* Headers for additonal Pages */
+.hero-pages-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin: 1.2rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-pages-content {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    padding-left: 5rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.hero-pages-content h1 span {
+    background-color: var(--primary-bg);
+    padding: 0.5rem 1rem;
+}
+
+/* Home page */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.aside-p {
+    padding-bottom: 2rem;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #FF914D;
+    /* color: white; */
+    text-transform: uppercase;
+}
+
+.citation {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+/* City Pages */
+.city-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.explore-more-float {
+    float: left;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.btn-float {
+    float: right;
+    margin-left: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Contacts page */
+#form-section {
+    min-height: 60vh;
+    /* background-color: var(--primary-bg); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 800px;
+    padding: 2rem 0
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--primary-bg);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .page-container {
+        padding: 0 2rem;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        background-color: #333;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    form {
+        width: 400px;
+    }
+}
