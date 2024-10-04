@@ -57,6 +57,17 @@ ul li {
     padding: 1rem 0;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.navbar li {
+    align-items: center;
+}
+
 .logo a {
     font-size: 25px;
     text-decoration: none;
@@ -73,9 +84,6 @@ ul li {
     padding-left: 2rem;
 }
 
-.nav-links li {
-    margin-left: 20px;
-}
 
 .nav-links li a {
     position: relative;
@@ -88,6 +96,8 @@ ul li {
     transition: background-color 0.3s ease;
 
 }
+
+
 
 .nav-links li a::after {
     content: '';
