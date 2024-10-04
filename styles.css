@@ -169,7 +169,8 @@ ul li {
 
 .hero-home-content {
     position: absolute;
-    top: 150px;
+    justify-content: center;
+    /* top: 250px; */
     color: white;
     z-index: 1;
     text-align: center;
